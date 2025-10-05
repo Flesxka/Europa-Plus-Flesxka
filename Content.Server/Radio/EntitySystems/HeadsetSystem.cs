@@ -19,6 +19,7 @@ using Content.Server.Emp;
 using Content.Server.Radio.Components;
 using Content.Server.Speech;
 using Content.Server._EinsteinEngines.Language;
+using Content.Shared._Europa.TTS;
 using Content.Shared.Chat;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Radio;
@@ -140,6 +141,10 @@ public sealed class HeadsetSystem : SharedHeadsetSystem
                 Message = canUnderstand ? args.OriginalChatMsg : args.LanguageObfuscatedChatMsg
             };
             _netMan.ServerSendMessage(msg, actor.PlayerSession.Channel);
+            if (parent != args.MessageSource && HasComp<TTSComponent>(args.MessageSource))
+            {
+                args.Receivers.Add(parent);
+            }
         }
         // Einstein Engines - Language end
     }
