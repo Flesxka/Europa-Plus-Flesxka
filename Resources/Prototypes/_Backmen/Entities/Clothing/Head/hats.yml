@@ -1,0 +1,71 @@
+# SPDX-FileCopyrightText: 2025 CatBackG
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBlackBeretBlueShield
+  name: officer "Blueshield" black beret
+  description: The officers' “Blueshield” black beret, instills a sense of tighter security.
+  components:
+  - type: Sprite
+    sprite: Backmen/Clothing/Head/Hats/blueberet.rsi
+  - type: Clothing
+    sprite: Backmen/Clothing/Head/Hats/blueberet.rsi
+  - type: Armor
+    coverage: # backmen: armour coverage
+    - Head
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+
+- type: entity
+  parent: ClothingHeadHatBlackBeretBlueShield
+  id: ClothingHeadHatLightBeretBlueShield
+  name: officer "Blueshield" light beret
+  description: The officers' “Blueshield” light beret, nice and beautiful.
+  components:
+  - type: Sprite
+    sprite: Backmen/Clothing/Head/Hats/lightblueberet.rsi
+  - type: Clothing
+    sprite: Backmen/Clothing/Head/Hats/lightblueberet.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBlueShieldCap
+  name: officer "Blueshield" cap
+  description: The BlueShield officer's cap has the Blue Shield Security emblem.
+  components:
+  - type: Sprite
+    sprite: Backmen/Clothing/Head/Hats/bluecap.rsi
+  - type: Clothing
+    sprite: Backmen/Clothing/Head/Hats/bluecap.rsi
+  - type: Armor
+    coverage: # backmen: armour coverage
+    - Head
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatUshankaBlueShield
+  name: BlueShield's Ushanka
+  description: A rather old USSSP Navy ushanka, modified for the needs of Blue Shield officers (their emblem has been added).
+  components:
+  - type: Sprite
+    sprite: Backmen/Clothing/Head/Hats/blueushanka.rsi
+  - type: Clothing
+    sprite: Backmen/Clothing/Head/Hats/blueushanka.rsi
+  - type: Armor
+    coverage: # backmen: armour coverage
+    - Head
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9

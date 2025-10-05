@@ -25,6 +25,23 @@
       time: 187200
 
 # Hats
+# Europa-Edit-Start
+- type: loadout
+  id: BlueshieldOfficerBlackBeretBlueShield
+  equipment:
+    head: ClothingHeadHatBlackBeretBlueShield
+
+- type: loadout
+  id: BlueshieldOfficerLightBeretBlueShield
+  equipment:
+    head: ClothingHeadHatLightBeretBlueShield
+
+- type: loadout
+  id: BlueShieldOfficerUshankaBlueShield
+  equipment:
+    head: ClothingHeadHatUshankaBlueShield
+# Europa-Edit-End
+
 - type: loadout
   id: BlueshieldOfficerHeadSwatHelmet
   equipment:
