@@ -38,13 +38,13 @@ public sealed partial class MorphComponent : Component
     public string MorphSpawnProto = "MorphGhostRole";
 
     [DataField]
-    public float EatWeaponChanceOnHit = 0.2f;
+    public float EatWeaponChanceOnHit = 0.1f;
 
     [DataField]
-    public float EatWeaponChanceOnHited = 0.5f;
+    public float EatWeaponChanceOnHited = 0.4f;
 
     [DataField]
-    public int EatWeaponHungerReq = 5;
+    public int EatWeaponHungerReq = 10;
 
     [DataField]
     public int DetectableCount = 3;
@@ -53,7 +53,10 @@ public sealed partial class MorphComponent : Component
     public int OpenVentFoodReq = 5;
 
     [DataField]
-    public int ReplicationFoodReq = 200;
+    public int EatNonOrganicFoodReq = 8;
+
+    [DataField]
+    public int ReplicationFoodReq = 300;
 
     [ViewVariables(VVAccess.ReadWrite), DataField]
     public SoundSpecifier? SoundDevour = new SoundPathSpecifier("/Audio/Effects/demon_consume.ogg")

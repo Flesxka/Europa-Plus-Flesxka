@@ -175,6 +175,7 @@
   - type: Tag
     tags:
     - Pipe
+    - MorphBlacklist
   - type: Physics
     canCollide: false
     bodyType: static

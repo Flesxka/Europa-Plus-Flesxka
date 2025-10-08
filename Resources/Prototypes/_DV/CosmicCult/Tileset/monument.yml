@@ -117,6 +117,9 @@
     corruptionReduction: 0.01
     enabled: false
     floodFillStarting: true
+  - type: Tag
+    tags:
+    - MorphBlacklist
 
  ########### SPAWN-IN ANIMATION #############
 

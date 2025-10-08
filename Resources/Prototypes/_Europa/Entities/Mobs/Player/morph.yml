@@ -85,8 +85,10 @@
         - ArrivalsBlacklist
         - FTLSmashImmune
         - SupermatterImmune
+        - TegGenerator
       tags:
         - IgnoreImmovableRod
+        - MorphBlacklist
   - type: MindContainer
   - type: ChameleonProjector
     whitelist:
@@ -101,6 +103,8 @@
       - ChameleonDisguise # no becoming kleiner
       - Pda # PDAs currently make you invisible /!\
       - Morph
+      tags:
+      - MorphBlacklist
     disguiseProto: ChameleonDisguise
   - type: UserInterface
     interfaces:

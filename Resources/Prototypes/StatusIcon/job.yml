@@ -90,7 +90,7 @@
   abstract: true
   priority: 1
   locationPreference: Right
-  isShaded: true
+  isShaded: false
 
 - type: jobIcon
   parent: JobIcon

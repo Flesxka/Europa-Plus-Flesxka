@@ -83,7 +83,7 @@
   abstract: true
   priority: 3
   locationPreference: Left
-  isShaded: true
+  isShaded: false
 
 - type: healthIcon
   parent: HealthIcon

@@ -88,6 +88,9 @@
     - type: GuideHelp
       guides:
       - GasMiningAndStorage
+    - type: Tag
+      tags:
+      - MorphBlacklist
 
 - type: entity
   name: O2 gas miner

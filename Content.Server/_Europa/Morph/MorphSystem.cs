@@ -143,6 +143,9 @@ public sealed class MorphSystem : SharedMorphSystem
     {
         _chameleon.TryReveal(ent.Owner);
 
+        if (args.HitEntities.Count <= 0)
+            return;
+
         if (!TryComp<HandsComponent>(args.HitEntities[0], out var hands))
             return;
 
@@ -373,7 +376,7 @@ public sealed class MorphSystem : SharedMorphSystem
         if (_whitelistSystem.IsWhitelistFailOrNull(component.DevourWhitelist, args.Target))
             return;
 
-        if (_whitelistSystem.IsWhitelistPass(component.DevourBlacklist, args.Target))
+        if (_whitelistSystem.IsWhitelistPassOrNull(component.DevourBlacklist, args.Target))
         {
             _popup.PopupEntity(Loc.GetString("devour-action-popup-message-blacklisted", ("target", ToPrettyString(args.Target))), uid, uid);
             return;
@@ -450,8 +453,12 @@ public sealed class MorphSystem : SharedMorphSystem
         // Item devour
         if (!TryComp<MobThresholdsComponent>(args.Target, out var state) || !_threshold.TryGetDeadThreshold(args.Target.Value, out var health))
         {
-            health = -component.EatWeaponHungerReq;
-            _hunger.ModifyHunger(uid, (int)Math.Abs((float)health.Value / 3.5f), hunger);
+            if (_hunger.GetHunger(hunger) < component.EatNonOrganicFoodReq)
+            {
+                _popup.PopupEntity(Loc.GetString("devour-action-popup-message-not-enough-hunger"), uid, uid);
+                return;
+            }
+            _hunger.ModifyHunger(uid, -component.EatNonOrganicFoodReq, hunger);
             _audioSystem.PlayPvs(component.SoundDevour, uid);
             component.ContainedCreatures.Add(args.Target.Value);
             _transform.SetCoordinates(args.Target.Value, new EntityCoordinates(EntityUid.Invalid, Vector2.Zero));

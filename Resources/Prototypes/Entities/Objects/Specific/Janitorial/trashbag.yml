@@ -48,6 +48,8 @@
       tags:
         - Cartridge
         - Trash
+        - Organ
+        - Meat
   - type: UseDelay
     delay: 0.5
   - type: Tag

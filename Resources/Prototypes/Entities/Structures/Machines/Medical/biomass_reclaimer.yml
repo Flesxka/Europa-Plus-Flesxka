@@ -21,6 +21,10 @@
     state: icon
     snapCardinals: true
   - type: BiomassReclaimer
+    optionalWhitelist:
+      tags:
+      - Organ
+      - Meat
   - type: Climbable
     delay: 7
   - type: AmbientSound

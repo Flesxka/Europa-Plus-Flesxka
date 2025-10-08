@@ -12,3 +12,5 @@ morph-remember-action-success = Вы запомнили { $target }.
 morph-ambush-blocked = Вы слишком близко к живым существам
 
 devour-action-popup-message-blacklisted = Вы не можете поглотить { $target }.
+
+devour-action-popup-message-not-enough-hunger = Вы слишком голодны для этого!

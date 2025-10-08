@@ -83,6 +83,9 @@
     - TauCetiBasic
     understands:
     - TauCetiBasic
+  - type: Tag
+    tags:
+    - MorphBlacklist
 
 - type: entity
   abstract: true

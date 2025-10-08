@@ -8,7 +8,7 @@
   priority: 2
   locationPreference: Right
   layer: Mod
-  isShaded: true
+  isShaded: false
   icon:
     sprite: /Textures/_Goobstation/Interface/Misc/security_icons.rsi
     state: MindShield-broken

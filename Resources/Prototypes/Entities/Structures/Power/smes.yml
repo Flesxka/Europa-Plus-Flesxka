@@ -136,6 +136,9 @@
       - PowerStorage
       - VoltageNetworks
       - Power
+    - type: Tag
+      tags:
+      - MorphBlacklist
 
     # Interface
     - type: BatteryInterface

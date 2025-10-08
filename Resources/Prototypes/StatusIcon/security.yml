@@ -85,7 +85,7 @@
   priority: 3
   offset: 1
   locationPreference: Right
-  isShaded: true
+  isShaded: false
 
 - type: securityIcon
   parent: SecurityIcon
@@ -148,7 +148,7 @@
   priority: 2
   locationPreference: Right
   layer: Mod
-  isShaded: true
+  isShaded: false
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
     state: MindShield

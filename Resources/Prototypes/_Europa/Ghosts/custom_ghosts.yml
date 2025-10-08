@@ -6,6 +6,14 @@
   alpha: 0.8
   ghostDescription: Hello World!
 
+# HELLO my name is _ZnAkI_
+- type: customGhost
+  id: ZnAkIghost
+  ckey: _ZnAkI_
+  sprite: _Europa/Ghosts/ZnAkI.rsi
+  alpha: 0.9
+  ghostDescription: Grandma, come here grandma!
+
 # sosal
 - type: customGhost
   id: ILLUZORRGhost

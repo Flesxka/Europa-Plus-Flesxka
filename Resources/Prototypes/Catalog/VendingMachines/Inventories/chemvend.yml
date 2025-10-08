@@ -14,63 +14,63 @@
   id: ChemVendInventory
   startingInventory:
     Jug: 4
-    JugAluminium: 2
+    JugAluminium: 4
     JugCarbon: 4
-    JugChlorine: 1
-    JugCopper: 2
-    JugEthanol: 2
-    JugFluorine: 1
-    JugHydrogen: 3
-    JugIodine: 1
-    JugIron: 2
-    JugLithium: 2
-    JugMercury: 1
-    JugNitrogen: 3
-    JugOxygen: 3
-    JugPhosphorus: 1
-    JugPotassium: 2
-    JugRadium: 1
-    JugSilicon: 2
-    JugSodium: 2
-    JugSugar: 3
-    JugSulfur: 1
+    JugChlorine: 4
+    JugCopper: 4
+    JugEthanol: 4
+    JugFluorine: 4
+    JugHydrogen: 4
+    JugIodine: 4
+    JugIron: 4
+    JugLithium: 4
+    JugMercury: 4
+    JugNitrogen: 4
+    JugOxygen: 4
+    JugPhosphorus: 4
+    JugPotassium: 4
+    JugRadium: 4
+    JugSilicon: 4
+    JugSodium: 4
+    JugSugar: 4
+    JugSulfur: 4
   contrabandInventory:
-    DrinkLithiumFlask: 1
-    StrangePill: 3
-    ChemistryBottleToxin: 1
-    ChemistryBottleLead: 2
+    DrinkLithiumFlask: 4
+    StrangePill: 4
+    ChemistryBottleToxin: 4
+    ChemistryBottleLead: 4
 
 - type: vendingMachineInventory
   id: ChemVendInventorySyndicate
   startingInventory:
     Jug: 4
-    JugAluminium: 2
+    JugAluminium: 4
     JugCarbon: 4
-    JugChlorine: 1
-    JugCopper: 2
-    JugEthanol: 2
-    JugFluorine: 1
-    JugHydrogen: 3
-    JugIodine: 1
-    JugIron: 2
-    JugLithium: 2
-    JugMercury: 1
-    JugNitrogen: 3
-    JugOxygen: 3
-    JugPhosphorus: 1
-    JugPotassium: 2
-    JugRadium: 1
-    JugSilicon: 2
-    JugSodium: 2
-    JugSugar: 3
-    JugSulfur: 1
-    JugWeldingFuel: 1
-    PlasmaChemistryVial: 1
+    JugChlorine: 4
+    JugCopper: 4
+    JugEthanol: 4
+    JugFluorine: 4
+    JugHydrogen: 4
+    JugIodine: 4
+    JugIron: 4
+    JugLithium: 4
+    JugMercury: 4
+    JugNitrogen: 4
+    JugOxygen: 4
+    JugPhosphorus: 4
+    JugPotassium: 4
+    JugRadium: 4
+    JugSilicon: 4
+    JugSodium: 4
+    JugSugar: 4
+    JugSulfur: 4
+    JugWeldingFuel: 4
+    PlasmaChemistryVial: 4
   contrabandInventory:
-    DrinkLithiumFlask: 1
-    StrangePill: 3
-    ChemistryBottlePax: 3
-    ChemistryBottleMuteToxin: 3
-    ChemistryBottleLead: 2
-    ChemistryBottleToxin: 1
+    DrinkLithiumFlask: 4
+    StrangePill: 4
+    ChemistryBottlePax: 4
+    ChemistryBottleMuteToxin: 4
+    ChemistryBottleLead: 4
+    ChemistryBottleToxin: 4
 

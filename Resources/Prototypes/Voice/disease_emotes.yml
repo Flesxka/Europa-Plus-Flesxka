@@ -30,13 +30,16 @@
   chatTriggers:
     - cough
     - coughs
-    - coughed 
+    - coughed
     - cough.
     - coughs.
     - coughed.
     - cough!
     - coughs!
     - coughed!
+    - кашель
+    - кашляет
+    - кашлянул
 
 - type: emote
   id: CatMeow
@@ -77,6 +80,8 @@
   chatTriggers:
     - yawn
     - yawns
+    - зевок
+    - зевает
 
 - type: emote
   id: Snore

@@ -134,6 +134,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Physics.Components;
 using Robust.Shared.Random;
 using Content.Shared.DragDrop;
+using Content.Shared.Whitelist;
 using Robust.Shared.Prototypes; // # GoobStation
 
 namespace Content.Server.Medical.BiomassReclaimer
@@ -156,6 +157,7 @@ namespace Content.Server.Medical.BiomassReclaimer
         [Dependency] private readonly MaterialStorageSystem _material = default!;
         [Dependency] private readonly SharedMindSystem _minds = default!;
         [Dependency] private readonly InventorySystem _inventory = default!;
+        [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
         public static readonly ProtoId<MaterialPrototype> BiomassPrototype = "Biomass";
 
@@ -193,6 +195,8 @@ namespace Content.Server.Medical.BiomassReclaimer
 
                 var actualYield = (int) (reclaimer.CurrentExpectedYield); // can only have integer biomass
                 reclaimer.CurrentExpectedYield = reclaimer.CurrentExpectedYield - actualYield; // store non-integer leftovers
+                if (actualYield < 1)
+                    actualYield = 1;
                 _material.SpawnMultipleFromMaterial(actualYield, BiomassPrototype, Transform(uid).Coordinates);
 
                 reclaimer.BloodReagent = null;
@@ -364,6 +368,9 @@ namespace Content.Server.Medical.BiomassReclaimer
         {
             if (HasComp<ActiveBiomassReclaimerComponent>(reclaimer))
                 return false;
+
+            if (_whitelistSystem.IsWhitelistPass(reclaimer.Comp.OptionalWhitelist, dragged))
+                return true;
 
             bool isPlant = HasComp<ProduceComponent>(dragged);
             if (!isPlant && !HasComp<MobStateComponent>(dragged))

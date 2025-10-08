@@ -11,6 +11,7 @@
 // SPDX-License-Identifier: MIT
 
 using Content.Shared.Storage;
+using Content.Shared.Whitelist;
 
 namespace Content.Server.Medical.BiomassReclaimer
 {
@@ -85,5 +86,8 @@ namespace Content.Server.Medical.BiomassReclaimer
         /// </summary>
         [ViewVariables(VVAccess.ReadWrite), DataField]
         public bool SafetyEnabled = true;
+
+        [DataField]
+        public EntityWhitelist? OptionalWhitelist = new();
     }
 }

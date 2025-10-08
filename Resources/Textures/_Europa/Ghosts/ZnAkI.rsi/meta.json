@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0 (for original content only)",
+  "copyright": "Sprites © FocasLens / Team Shanghai Alice (ZUN), extracted from Touhou Puppet Dance Performance. Used under Touhou fan guidelines for non-commercial purposes.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "animated",
+      "directions": 4
+    }
+  ]
+}

@@ -69,6 +69,7 @@
   - type: Tag
     tags:
     - HighRiskItem
+    - MorphBlacklist
   - type: StealTarget
     stealGroup: NukeDisk
   - type: SupermatterImmune # Goobstation

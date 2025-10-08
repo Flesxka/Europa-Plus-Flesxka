@@ -120,6 +120,9 @@
   - type: GuideHelp
     guides:
     - ShuttleCraft
+  - type: Tag
+    tags:
+    - MorphBlacklist
 
 # Base Wallmount Generator
 

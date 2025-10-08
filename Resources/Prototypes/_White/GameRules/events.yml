@@ -3,7 +3,7 @@
   id: XenomorphsInfestation
   components:
   - type: StationEvent
-    weight: 1
+    weight: 3 # Goobstation - was 7.5
     duration: null
     minimumPlayers: 45 # Europa-Edit | 50 > 45
     earliestStart: 30 # Europa-Edit | 60 > 30

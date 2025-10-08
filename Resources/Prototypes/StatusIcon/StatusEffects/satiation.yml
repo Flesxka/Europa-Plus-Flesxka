@@ -83,7 +83,7 @@
   abstract: true
   priority: 5
   locationPreference: Right
-  isShaded: true
+  isShaded: false
 
 - type: satiationIcon
   id: HungerIconOverfed
@@ -112,7 +112,7 @@
   abstract: true
   priority: 5
   locationPreference: Left
-  isShaded: true
+  isShaded: false
 
 - type: satiationIcon
   id: ThirstIconOverhydrated

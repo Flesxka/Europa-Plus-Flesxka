@@ -443,6 +443,7 @@
         damage: 15
       behaviors:
       - !type:GibBehavior
+        gibContents: Skip
         recursive: false
   - type: Stamina
     critThreshold: 60
